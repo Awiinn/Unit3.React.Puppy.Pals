@@ -1,0 +1,47 @@
+body {
+  background-color: lightblue;
+  align-items: center;
+}
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.player-card {
+  width: 400px;
+  height: 500px;
+  margin: 10px;
+  background-color: rebeccapurple;
+  border: 2px solid black;
+  border-radius: 10%;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.player-image-container {
+  display: flex;
+  place-items: center;
+  height: 300px;
+  padding: 15px;
+}
+
+.player-image {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+  display: grid;
+  place-items: center;
+  margin-left: 65px;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.player-details {
+  flex-direction: column;
+  place-items: center;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
