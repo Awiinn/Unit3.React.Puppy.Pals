@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(187, 187, 241);
   align-items: center;
 }
 
@@ -13,7 +13,7 @@ body {
   width: 400px;
   height: 500px;
   margin: 10px;
-  background-color: rebeccapurple;
+  background-color: lightyellow;
   border: 2px solid black;
   border-radius: 10%;
   position: relative;
@@ -33,7 +33,8 @@ body {
   object-fit: cover;
   display: grid;
   place-items: center;
-  margin-left: 65px;
+  margin-left: 60px;
+  margin-top: 15px;
   border: 2px solid black;
   border-radius: 5%;
 }
@@ -41,7 +42,7 @@ body {
 .player-details {
   flex-direction: column;
   place-items: center;
-  color: white;
+  color: black;
   font-size: 20px;
   text-align: center;
 }

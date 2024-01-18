@@ -1,8 +1,10 @@
 import { useSelector } from "react-redux";
 import { useGetAllPlayersQuery } from "../api/api";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function AllPlayers() {
+  const navigate = useNavigate();
   const players = useSelector((state) => state.player);
   const { isLoading } = useGetAllPlayersQuery();
   return (
@@ -22,9 +24,9 @@ function AllPlayers() {
               </div>
               <div className="player-details">
                 <h1>{player.name}</h1>
-                <Link key={player.id} to={"/players/" + player.id}>
-                  <button>See Details</button>
-                </Link>
+                <button onClick={() => navigate(`/players/${player.id}`)}>
+                  See Details
+                </button>
               </div>
             </div>
           ))
