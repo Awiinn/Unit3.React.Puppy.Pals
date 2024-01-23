@@ -46,3 +46,86 @@ body {
   font-size: 20px;
   text-align: center;
 }
+
+.single-player-card {
+  width: 800px;
+  height: 1000px;
+  margin: 10px;
+  background-color: lightyellow;
+  border: 2px solid black;
+  border-radius: 10%;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.single-player-image-container {
+  display: flex;
+  place-items: center;
+  height: 600px;
+  padding: 15px;
+}
+
+.single-player-image {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  display: grid;
+  place-items: center;
+  margin-left: 135px;
+  margin-top: 15px;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.single-player-details {
+  flex-direction: column;
+  place-items: center;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+.nav {
+  overflow: hidden;
+  background-color: lightyellow;
+  border: 2px solid black;
+}
+
+.nav-link {
+  float: left;
+  display: block;
+  margin-left: 15px;
+  padding: 5px;
+  border-right: 2px solid black;
+  background-color: white;
+}
+
+.nav-search {
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.nav-link:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link:active {
+  text-decoration: underline;
+}
+.nav-link:hover {
+  background-color: rgb(187, 187, 241);
+}
+
+.form-container {
+  text-align: center;
+  background-color: lightyellow;
+  border: 2px solid black;
+  margin: 15px 0px;
+  padding: 10px;
+}

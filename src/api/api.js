@@ -12,7 +12,25 @@ export const api = createApi({
     getSinglePlayer: builder.query({
       query: (id) => "/players/" + id,
     }),
+    addNewPlayer: builder.mutation({
+      query: (playerData) => ({
+        url: "/players",
+        method: "POST",
+        body: playerData,
+      }),
+    }),
+    deletePlayer: builder.mutation({
+      query: (id) => ({
+        url: "/players/" + id,
+        method: "DELETE",
+      }),
+    }),
   }),
 });
 
-export const { useGetAllPlayersQuery, useGetSinglePlayerQuery } = api;
+export const {
+  useGetAllPlayersQuery,
+  useGetSinglePlayerQuery,
+  useAddNewPlayerMutation,
+  useDeletePlayerMutation,
+} = api;
